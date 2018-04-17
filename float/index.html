@@ -24,6 +24,14 @@
     </style>
 </head>
 <body>
+/*
+1.给父级加高度（延展性不好）
+2.给父级加浮动（页面中所有元素都加浮动，元素margin自动失效）
+3.给父级加inline-block（元素margin失效）
+4.给元素加同级空标签（）
+5.给同级加<br clear="all">
+6.伪类清除
+*/
 
 <div class="box clearfix">
     <div class="item"></div>
