@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;"></canvas>
+<canvas id="myCanvas2" width="200" height="100" style="border:1px solid #c3c3c3;"></canvas>
+<canvas id="myCanvas3" width="200" height="100" style="border:1px solid #c3c3c3;"></canvas>
+</body>
+<script type="text/javascript">
+    var myCanvas = document.getElementById("myCanvas");
+    var cxt = myCanvas.getContext("2d");
+    cxt.strokeStyle = "red";
+    cxt.moveTo(10,10);
+    cxt.lineTo(50,10);
+    cxt.lineTo(10,50);
+    cxt.stroke();
+
+    var myCanvas2 = document.getElementById("myCanvas2");
+    var cxt2 = myCanvas2.getContext("2d");
+    cxt2.fillStyle = "red";
+    cxt2.fillRect(10,20,10,20);
+
+    var myCanvas3 = document.getElementById("myCanvas3");
+    var cxt3 = myCanvas3.getContext("2d");
+    cxt3.fillStyle = "red";
+    cxt3.beginPath();
+    cxt3.arc(20,20,10,0,Math.PI*2,true);
+    cxt3.closePath();
+    cxt3.fill();
+</script>
+</html>
